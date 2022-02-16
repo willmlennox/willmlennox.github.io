@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lab4_Barbershop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
+
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm sticky-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand my_navbar" href="#">Johnny's Barbershop</a>
+            <ul class="navbar-nav nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link my_navbar" href="#team">OUR TEAM</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link my_navbar" href="#services">SERVICES</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link my_navbar" href="#contact">CONTACT US</a>
+                </li>
+
+                <a class="btn btn-primary" type="submit" href="#book">BOOK NOW</a>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+
+        <div class="container-fluid py-3">
+
+            <div class="card-group">
+
+
+                <div class="card text-white card_book_now ">
+
+                        <div class="card-body bg-dark text-center">
+                                <br>
+                                <br>
+                                <br>
+                                <h4 class="card-title">Your haircut journey starts here.</h4>
+                                <p class="card-text">Haircuts for everyone at affordable prices.</p>
+                                <a href="#book" class="btn-lg btn-primary">BOOK NOW</a>
+
+                        </div>
+
+
+                </div>
+
+                <div class="card text-white">
+                    <img class="card-img-top img_splash" src="images/haircut4.jpg" alt="">
+                        <div class="card-img-overlay">
+
+                      </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="container-fluid" id="team">
+            <div class="card-deck">
+                <div class="card bg-dark text-white">
+                <img class="card-img-top img_barbers_card" src="images/Johnny.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Johnny</h5>
+                    <p class="card-text">Johnny was voted Ottawa's best barber 3 years in a row!</p>
+                    <p class="card-text"><small class="text-muted">Book with Johnny if you like what you see!</small></p>
+                </div>
+                </div>
+                <div class="card bg-dark text-white">
+                <img class="card-img-top img_barbers_card" src="images/George.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">George</h5>
+                    <p class="card-text">George has been working as a barber for over 25 years.</p>
+                    <p class="card-text"><small class="text-muted">Book with George if you like what you see!</small></p>
+                </div>
+                </div>
+                <div class="card bg-dark text-white">
+                <img class="card-img-top img_barbers_card" src="images/dave.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Dave</h5>
+                    <p class="card-text">Dave is an expert at cutting difficult to style hair.</p>
+                    <p class="card-text"><small class="text-muted">Book with Dave if you like what you see!</small></p>
+                </div>
+                </div>
+          </div>
+        </div>
+
+        <div class="container-fluid py-3" id="services">
+            <table class="table">
+                <thead>
+                    <tr>
+                      <th scope="col">Our Services</th>
+                      <th scope="col">Rate</th>
+                      <th scope="col">Barber</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Short Haircut</th>
+                      <td>$25</td>
+                      <td>Johnny, George, Dave</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Medium Haircut</th>
+                      <td>$30</td>
+                      <td>George, Dave</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Long Haircut</th>
+                      <td>$35</td>
+                      <td>Dave</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Beard Styling</th>
+                        <td>$40</td>
+                        <td>Johnny, Dave</td>
+                      </tr>
+                    <tr>
+                      <th scope="row">Hair Colouring</th>
+                      <td>$50</td>
+                      <td>Johnny, George</td>
+                    </tr>
+
+                  </tbody>
+            </table>
+        </div>
+
+        <div class="container-fluid" id="contact">
+            <div class="jumbotron bg-dark text-white">
+                <h2 class="display-4">Our Contact Information</h2>
+                <hr class="my-4">
+                <p class="lead">We are located at 160 Richmond Rd, Ottawa, ON K1Z 6W2</p>
+                <p class="lead">Phone number: +1 343-727-3833</p>
+
+            </div>
+        </div>
+
+        <div class="container-fluid" id="book">
+
+            <form>
+                <div class="form-group">
+                    <label for="serviceSelect">Select a service</label>
+                    <select multiple class="form-control" id="serviceSelect">
+                    <option>Short Haircut</option>
+                    <option>Medium Haircut</option>
+                    <option>Long Haircut</option>
+                    <option>Beard Styling</option>
+                    <option>Hair Colouring</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dateAndTime">Booking date and time</label>
+                    <input id="dateandtime" type="datetime-local" name="dateAndTime" value="0000-00-00T00:00">
+                </div>
+                <div class="form-group">
+                    <label for="contactInfo">Contact info</label>
+                    <input type="email" class="form-control" id="contactInfo" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <button type="submit" class="btn btn-primary">BOOK</button>
+            </form>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
