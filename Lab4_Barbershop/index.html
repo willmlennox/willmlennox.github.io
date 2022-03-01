@@ -152,14 +152,12 @@
         <div class="container-fluid" id="book">
 
             <form>
-                <div class="form-group">
+                <div class="form-check">
                     <label for="serviceSelect">Select a service</label>
-                    <select multiple class="form-control" id="serviceSelect">
-                    <option>Short Haircut</option>
-                    <option>Medium Haircut</option>
-                    <option>Long Haircut</option>
-                    <option>Beard Styling</option>
-                    <option>Hair Colouring</option>
+                    <select class="form-check-input" id="serviceSelect">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Default checkbox
+                          </label>
                     </select>
                 </div>
                 <div class="form-group">
@@ -169,6 +167,11 @@
                 <div class="form-group">
                     <label for="contactInfo">Contact info</label>
                     <input type="email" class="form-control" id="contactInfo" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="customerName">Contact info</label>
+                    <input type="email" class="form-control" id="customerName" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <button type="submit" class="btn btn-primary">BOOK</button>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lab4_Barbershop</title>
+  <title>Lab5_Barbershop_jquery</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,14 +10,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <script src="scripts/service.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/106ec2624d.js" crossorigin="anonymous"></script>
+
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/jquery-ui.css" rel="stylesheet">
+
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-sm sticky-top bg-dark">
         <div class="container">
-            <a class="navbar-brand my_navbar" href="#">Johnny's Barbershop</a>
+            <a class="navbar-brand my_navbar" href="#">
+                <img src="images/barber.png" width="45" height="45" class="d-inline-block align-top" alt="">
+                Johnny's Barbershop
+              </a>
             <ul class="navbar-nav nav-fill">
                 <li class="nav-item">
                     <a class="nav-link my_navbar" href="#team">OUR TEAM</a>
@@ -153,21 +166,59 @@
 
             <form>
                 <div class="form-group">
-                    <label for="serviceSelect">Select a service</label>
+                    <label for="serviceSelect">Who would you like to book with?</label>
                     <select multiple class="form-control" id="serviceSelect">
-                    <option>Short Haircut</option>
-                    <option>Medium Haircut</option>
-                    <option>Long Haircut</option>
-                    <option>Beard Styling</option>
-                    <option>Hair Colouring</option>
+                    <option>Johnny</option>
+                    <option>George</option>
+                    <option>Dave</option>
                     </select>
                 </div>
+                <p>What services would you like?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="short" id="serviceCheck1">
+                    <label class="form-check-label" for="serviceCheck1">
+                        Short Haircut
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="medium" id="serviceCheck2">
+                    <label class="form-check-label" for="serviceCheck2">
+                        Medium Haircut
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="long" id="serviceCheck3">
+                    <label class="form-check-label" for="serviceCheck3">
+                        Long Haircut
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="beard" id="serviceCheck4">
+                    <label class="form-check-label" for="serviceCheck4">
+                        Beard Styling
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="colour" id="serviceCheck5">
+                    <label class="form-check-label" for="serviceCheck5">
+                        Hair Colouring
+                    </label>
+                </div>
+                <br>
+                
                 <div class="form-group">
-                    <label for="dateAndTime">Booking date and time</label>
-                    <input id="dateandtime" type="datetime-local" name="dateAndTime" value="0000-00-00T00:00">
+                    
+                    <p>Select a Date: <img src="images/calendar-solid.svg" alt="calendar" style="width: 25px; height: 25px;"> <input type="text" id="dateAndTime"> </p>
+                </div>
+                
+                <div class="form-group">
+                    <img src="images/user-solid.svg" alt="user" style="width: 25px; height: 25px;">
+                    <label for="customerName">Full Name</label>
+                    <input type="text" class="form-control" id="customerName" aria-describedby="emailHelp" placeholder="Enter your full name">
                 </div>
                 <div class="form-group">
-                    <label for="contactInfo">Contact info</label>
+                    <img src="images/envelope-solid.svg" alt="email" style="width: 25px; height: 25px;">
+                    <label for="contactInfo">Email Address</label>
                     <input type="email" class="form-control" id="contactInfo" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
