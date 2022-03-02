@@ -16,8 +16,6 @@ $(document).ready(function() {
 
 function validatePhone(txtPhone) {
     var a = document.getElementById(txtPhone).value;
-    // This filter asks for something like (12345), so parentheses with any number (at least 1)
-    // of digits
     var filter = /^(\([-+]?[0-9]+)\)$/;
     if (filter.test(a) || String(a).length == 10) {
         
@@ -50,7 +48,7 @@ function validateCVV(cvv){
 function validateExpDate(expdate){
     var a = document.getElementById(expdate).value;
     var filter = /^(\([-+]?[0-9]+)\)$/;
-    if (filter.test(a) || String(a).length == 6) {
+    if (filter.test(a) || String(a).length == 4) {
         return true;
     }
     else {
@@ -73,7 +71,7 @@ $(document).ready(function(){
 
     $("#debit").on("change", function(){
         if (!validateCard("debit")){
-            alert("Invalid card number. Phone must be a 16 digit number.");
+            alert("Invalid card number. Card must be a 16 digit number.");
             $("#debit").val("1111111111111111");
             $("#debit").addClass("error");
         }
@@ -82,9 +80,9 @@ $(document).ready(function(){
         }
     });
     $("#expdate").on("change", function(){
-        if (!validateCVV("expdate")){
-            alert("Invalid card number. Phone must be a 6 digit number.");
-            $("#expdate").val("042026");
+        if (!validateExpDate("expdate")){
+            alert("Invalid expiry date. Expiry Date must be a 4 digits.");
+            $("#expdate").val("0000");
             $("#expdate").addClass("error");
         }
         else {
@@ -93,8 +91,8 @@ $(document).ready(function(){
     });
     $("#cvv").on("change", function(){
         if (!validateCVV("cvv")){
-            alert("Invalid card number. Phone must be a 3 digit number.");
-            $("#cvv").val("123");
+            alert("Invalid CVV. CVV must be a 3 digit number.");
+            $("#cvv").val("000");
             $("#cvv").addClass("error");
         }
         else {
