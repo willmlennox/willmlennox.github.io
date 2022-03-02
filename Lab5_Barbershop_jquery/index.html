@@ -208,21 +208,20 @@
                 
                 <div class="form-group">
                     
-                    <p>Select a Date: <img src="images/calendar-solid.svg" alt="calendar" style="width: 25px; height: 25px;"> <input type="text" id="dateAndTime"> </p>
+                    <p><img src="images/calendar-solid.svg" alt="calendar" style="width: 25px; height: 25px;"> Select a Date: <input type="text" id="dateAndTime"> </p>
                 </div>
                 <div class="form-group">
-                    
-                    <p>Enter your phone number: <input value="1234567890" type="text" id="phone"></p>
-                </div>
-                <div class="form-group">
-                    <h3>Credit Card Information</h3>
-                    <p>Credit Card Number: <input type="text" id="debit" title="We ask for your credit card number in case of no-show, 20$ will be charged."></p>
-                    <p>Expiration Date: <input type="text" value="042026" id="expdate" title="Enter a value in the form of month/year"></p>
-                    <p>Credit Card Number: <input type="text" value="123" id="cvv"></p>
+                    <br>
+                    <h4><img src="images/credit-card-solid.svg" alt="user" style="width: 25px; height: 25px;"> Credit Card Information</h4>
+                    <p>Credit Card Number: <input type="text" id="debit" title="A no-show fee of $10 will be charged if you don't come to your booking."></p>
+                    <p>Expiration Date: <input type="text" value="0000" id="expdate" title="Enter a value in the form of month/year"></p>
+                    <p>Credit Card Number: <input type="text" value="000" id="cvv"></p>
                 </div>
                 
                 
                 <div class="form-group">
+                    <br>
+                    <h4>Personal Information</h4>
                     <img src="images/user-solid.svg" alt="user" style="width: 25px; height: 25px;">
                     <label for="customerName">Full Name</label>
                     <input type="text" class="form-control" id="customerName" aria-describedby="emailHelp" placeholder="Enter your full name">
@@ -232,6 +231,9 @@
                     <label for="contactInfo">Email Address</label>
                     <input type="email" class="form-control" id="contactInfo" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <p>Enter your phone number: <input value="1234567890" type="text" id="phone"></p>
                 </div>
                 <button type="submit" class="btn btn-primary">BOOK</button>
             </form>
