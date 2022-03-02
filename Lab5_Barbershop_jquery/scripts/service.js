@@ -8,11 +8,31 @@ $(document).ready(function() {
 
     $("#dateAndTime").datepicker(
         {
-            maxDate: "+2M"
+            maxDate: "+2M",
+            minDate: 0,
+            beforeShowDay: function(day) {
+                var day = day.getDay();
+                var a = document.getElementById("serviceSelect").value;
+                if (day == 6 || day == 0) {
+                    return [false];
+                } else if (a == "Johnny" && day == 1) {
+                    return [false];
+                } else if (a == "George" && day == 3) {
+                    return [false];
+                } else if (a == "Dave" && day == 5) {
+                    return [false];
+                }
+                return [true];
+            }
         }
     );
 
 });
+
+function setHolidays() {
+    var a = document.getElementById("serviceSelect").value;
+
+}
 
 function validatePhone(txtPhone) {
     var a = document.getElementById(txtPhone).value;
