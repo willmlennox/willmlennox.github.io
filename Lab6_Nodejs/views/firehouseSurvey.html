@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <title>Lab 6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
+  
+  <body>
+	
+	<div class="container-md p-3 my-3 border bg-white text-black" id="survey">
+    <div class="text-center">
+      <a href="https://www.firehousesubs.ca/"><img src="../images/firehouse-subs-canada-comp.png" alt="" class="img-fluid" style="width: 50%;"></a>
+    </div>
+    <br>
+    <h3 class="text-center">Firehouse Subs Survey</h3>
+    <p class="text-center">Thank you for taking time to complete this survey for <a href="https://www.firehousesubs.ca/">Firehouse Subs.</a></p>
+    <form>
+      <div class="form-group">
+        <h3> Personal Information </h3>
+        <input class="form-control" type="text" name="firstname" placeholder="First Name" required />
+        <br>
+        <input class="form-control" type="text" type="text" name="lastname" placeholder="Last Name" required />
+      </div>
+      <br>
+      <div class="form-group">
+        <h3> Email Information </h3>
+        <input class="form-control" type="email" name="email" placeholder="email@website.com" required />
+      </div>
+      <br>
+			<h3>Do you think this website is easy to use? </h3>
+      <div class="form-check">
+				<input class="form-check-input"type="radio" id="answer_yes" name="easeofuse" value="YES">
+				<label class="form-check-label" for="answer_yes">Yes</label><br>
+				<input class="form-check-input"type="radio" id="answer_no" name="easeofuse" value="NO">
+				<label class="form-check-label" for="answer_no">No</label><br>
+				<input class="form-check-input"type="radio" id="answer_maybe" name="easeofuse" value="MAYBE">
+				<label class="form-check-label" for="answer_maybe">Maybe</label>
+			</div>
+      <br>
+      <h3> What should the website improve on?</h3>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" name="likes" value="Colour"> Colour<br>
+				<input class="form-check-input" type="checkbox" name="likes" value="Usability"> Usability<br>
+				<input class="form-check-input" type="checkbox" name="likes" value="Feel"> Feel<br>
+				<input class="form-check-input" type="checkbox" name="likes" value="Imagery"> Imagery<br>
+        <input class="form-check-input" type="checkbox" name="likes" value="Imagery"> Readability<br>
+			</div>
+      <br>
+			<div class="form-group">
+				<h3> What is your favourite part of the website? </h3>
+				<select class="custom-select" name="favourite" id="favourite">
+					<option value="easy" selected="selected">Easy to navigate</option>
+					<option value="pretty">Pretty design</option>
+					<option value="fun">Fun to use</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+      <br>
+      <h3> Would you recommend this website to a friend? </h3>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" id="answer_yes" name="recommend" value="YES">
+				<label class="form-check-label" for="answer_yes">Yes</label><br>
+				<input class="form-check-input" type="radio" id="answer_no" name="recommend" value="NO">
+				<label class="form-check-label" for="answer_no">No</label><br>
+			</div>
+      <br>
+			<div class="form-group">
+				<h3> Comments: </h3>
+				<textarea class="form-control" name="comments" rows="4"></textarea>
+			</div>
+      <br>
+      <br>
+      <div class="form-group text-center">
+        <button type="submit" class="btn-lg btn-primary" id="bb">Submit</button>
+      </div>
+    </form>
+    </div>
+    <div class="text-center text-muted">
+      <p>Made by: Colin McFarlane, Ryan McCarron, Will Lennox</p>
+    </div>
+	<script src="/assets/action.js"></script>
+  </body>
+</html> 

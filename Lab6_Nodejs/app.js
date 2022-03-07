@@ -1,9 +1,10 @@
+
 // Entry point for the application
 
 // express application
 var express = require('express');
 // require the controller we make
-var surveyController = require('./surveyController');
+var surveyController = require('./surveyController2');
 
 var app = express();
 
