@@ -46,12 +46,12 @@ module.exports = function(app){
         var lastname = readData("lastname");
         var email = readData("email");
         var easeofuse = readData("easeofuse");
-        var likes = readData("likes");
+        var dislikes = readData("dislikes");
         var favourite = readData("favourite");
         var recommend = readData("recommend");
         var comments = readData("comments");
-        res.render('showResults', {results: [firstname, lastname, email, easeofuse, likes, favourite, recommend, comments]});
-        console.log([firstname, lastname, email, easeofuse, likes, favourite, recommend, comments]);
+        res.render('showResults', {results: [firstname, lastname, email, easeofuse, dislikes, favourite, recommend, comments]});
+        console.log([firstname, lastname, email, easeofuse, dislikes, favourite, recommend, comments]);
     });
 
     // when a user goes to localhost:3000/niceSurvey
@@ -69,7 +69,7 @@ module.exports = function(app){
         for (var key in json){
             console.log(key + ": " + json[key]);
             // in the case of checkboxes, the user might check more than one
-            if ((key === "likes") && (json[key].length === 2)){
+            if ((key === "dislikes") && (json[key].length === 2)){
                 for (var item in json[key]){
                     combineCounts(key, json[key][item]);
                 }

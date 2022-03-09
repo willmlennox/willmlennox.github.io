@@ -5,22 +5,52 @@
 
 <body>
     <h1>Survey analysis</h1>
-    <h2>Colors</h2>
+    <h2>First Names</h2>
     <ul>
     <% for (var i=0; i<results[0].length; i++){ %>
-        <li><%= results[0][i].color %> :  <%= results[0][i].count %></li>
+        <li><%= results[0][i].firstname %> :  <%= results[0][i].count %></li>
     <% } %>    
     </ul>
-    <h2>Fruits</h2>
+    <h2>Last Names</h2>
     <ul>
     <% for (var i=0; i<results[1].length; i++){ %>
-        <li><%= results[1][i].fruit %> :  <%= results[1][i].count %></li>
+        <li><%= results[1][i].lastname %> :  <%= results[1][i].count %></li>
     <% } %>    
     </ul>
-    <h2>Animals</h2>
+    <h2>Emails</h2>
     <ul>
     <% for (var i=0; i<results[2].length; i++){ %>
-        <li><%= results[2][i].animal %> :  <%= results[2][i].count %></li>
+        <li><%= results[2][i].email %> :  <%= results[2][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Ease of Use</h2>
+    <ul>
+    <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].easeofuse %> :  <%= results[3][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Dislikes</h2>
+    <ul>
+    <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].dislikes %> :  <%= results[4][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Favourite part of website</h2>
+    <ul>
+    <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i].favourite %> :  <%= results[5][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Would they recommend?</h2>
+    <ul>
+    <% for (var i=0; i<results[6].length; i++){ %>
+        <li><%= results[6][i].recommend %> :  <%= results[6][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>Comments</h2>
+    <ul>
+    <% for (var i=0; i<results[7].length; i++){ %>
+        <li><%= results[7][i].comments %> :  <%= results[7][i].count %></li>
     <% } %>    
     </ul>
 </body>
