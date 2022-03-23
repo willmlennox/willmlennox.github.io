@@ -9,7 +9,7 @@ const Navibar = () => {
     return (
         <Navbar bg="dark" variant="dark">
             <Container>
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
             <img
             alt=""
             src={logo}
@@ -20,9 +20,9 @@ const Navibar = () => {
             Somerset Basketball League 
             </Navbar.Brand>
             <Nav className="me-auto">
-            <Nav.Link >Courts</Nav.Link>
-            <Nav.Link >Teams</Nav.Link>
-            <Nav.Link >Schedule</Nav.Link>
+            <Nav.Link href="courts">Courts</Nav.Link>
+            <Nav.Link href="teams">Teams</Nav.Link>
+            <Nav.Link href="schedule">Schedule</Nav.Link>
             </Nav>
             </Container>
         </Navbar>
