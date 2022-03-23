@@ -22,6 +22,7 @@ const Navibar = () => {
             <Nav className="me-auto">
             <Nav.Link href="courts">Courts</Nav.Link>
             <Nav.Link href="teams">Teams</Nav.Link>
+            <Nav.Link href="coaching">Coaching</Nav.Link>
             <Nav.Link href="schedule">Schedule</Nav.Link>
             </Nav>
             </Container>
