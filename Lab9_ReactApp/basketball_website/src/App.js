@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const googleTranslateElementInit = () => {
     new window.google.translate.TranslateElement({
-    pageLanguage: 'en', includedLanguages: 'en',
+    pageLanguage: 'en', includedLanguages: 'ja',
     autoDisplay: false, layout: window.google.translate.TranslateElement.FloatPosition.TOP_LEFT }, 'google_translate_element')
   }
   useEffect(() => {
