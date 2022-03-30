@@ -7,7 +7,7 @@ const Courts = () => {
         <Container fluid className="mt-3 bg-light p-5">
             <Row className="text-center">
                 <Col>
-                    <Button variant="warning">View Courts</Button>
+                    <Button variant="warning" href="/bookcourt">View Courts</Button>
                 </Col>
                 <Col>
                     Available Courts
