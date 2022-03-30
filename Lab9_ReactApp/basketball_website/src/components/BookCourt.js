@@ -8,6 +8,7 @@ const BookCourt = () => {
 
     const [isOpen, setIsOpen] = React.useState(false);
     const [show, setShow] = React.useState(false);
+    const [show2, setShow2] = React.useState(false);
     
     const showModal = () => {
         setIsOpen(true);
@@ -21,11 +22,16 @@ const BookCourt = () => {
 
     const hideModal2 = () => {
         setIsOpen(false);
+        showAlert2();
         
     };
 
     const showAlert = () => {
         setShow(true);
+    };
+
+    const showAlert2 = () => {
+        setShow2(true);
     };
 
 
@@ -48,7 +54,7 @@ const BookCourt = () => {
                     <Card.Footer>
                     {"Available: " + data.available}
                     </Card.Footer>
-                    <Button onClick={showModal} variant="primary">Book Court</Button>
+                    <Button onClick={showModal} variant="warning">Book Court</Button>
                     </Card>
                 );
                 })}
@@ -59,6 +65,10 @@ const BookCourt = () => {
 
             <Alert show={show} className="mt-5" variant="success">
                 <Alert.Heading>Successfully booked court</Alert.Heading>
+            </Alert>
+
+            <Alert show={show2} className="mt-5" variant="danger">
+                <Alert.Heading>Error booking court</Alert.Heading>
             </Alert>
 
             <Modal show={isOpen} onHide={hideModal}>
@@ -108,8 +118,8 @@ const BookCourt = () => {
                 </Modal.Body>
 
                 <Modal.Footer>
-                <button onClick={hideModal2}>Cancel</button>
-                <button onClick={hideModal}>Submit</button>
+                <Button onClick={hideModal2} variant="danger">Cancel</Button>
+                <Button onClick={hideModal} variant="success">Submit</Button>
                 </Modal.Footer>
             </Modal>
 

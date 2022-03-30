@@ -72,7 +72,7 @@ const Landing = () => {
                         </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                        <Button variant="warning">Book a Court</Button>
+                        <Button variant="warning" href="/courts">Book a Court</Button>
                         </Card.Footer>
                     </Card>
                     <Card border="secondary">
@@ -84,7 +84,7 @@ const Landing = () => {
                         </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                        <Button variant="warning">Join a Team</Button>
+                        <Button variant="warning" href="/teams">Join a Team</Button>
                         </Card.Footer>
                     </Card>
                     <Card border="secondary">
@@ -96,7 +96,7 @@ const Landing = () => {
                         </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                        <Button variant="warning">Find a Trainer</Button>
+                        <Button variant="warning" href="/coaching">Find a Trainer</Button>
                         </Card.Footer>
                     </Card>
                     </CardGroup>
